@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "league-900";
+  src: url("./assets/Fonts/League_Spartan/static/LeagueSpartan-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "league-700";
+  src: url("./assets/Fonts/League_Spartan/static/LeagueSpartan-Bold.ttf");
+}
+@font-face {
+  font-family: "league-600";
+  src: url("./assets/Fonts/League_Spartan/static/LeagueSpartan-SemiBold.ttf");
+}
+@font-face {
+  font-family: "libre-700";
+  src: url("./assets/Fonts/Libre_Baskerville/LibreBaskerville-Bold.ttf");
+}
+@font-face {
+  font-family: "libre-400";
+  src: url("./assets/Fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf");
+}
