@@ -2,10 +2,6 @@ import React from "react";
 import AdminProvider from "./Provider/AdminProvider";
 import Breadcrumb from "./Components/Breadcrumb";
 import { Card, CardBody, Typography } from "@material-tailwind/react";
-import {
-  CurrencyDollarIcon,
-  ClipboardDocumentIcon,
-} from "@heroicons/react/24/solid";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip } from "recharts";
 import { useState, useEffect } from "react";
 import axios from "axios";
@@ -63,7 +59,7 @@ const InformationsLists = () => {
   useEffect(() => {
     const getCountDonations = () => {
       axios
-        .get("http://localhost:3000/dashboard-donations/")
+        .get("http://prayers-reservation-server-production.up.railway.app/dashboard-donations/")
         .then((res) => {
           setCountDonations(res.data[0]);
           console.log(res.data[0]);
@@ -72,7 +68,7 @@ const InformationsLists = () => {
     };
     const getCountReservations = () => {
       axios
-        .get("http://localhost:3000/dashboard-reservations/")
+        .get("http://prayers-reservation-server-production.up.railway.app/dashboard-reservations/")
         .then((res) => {
           setcountReservations(res.data[0]);
           console.log(res.data[0]);

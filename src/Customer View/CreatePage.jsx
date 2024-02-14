@@ -68,7 +68,7 @@ const FormContent = () => {
         onSubmit={handleSubmit(async (data) => {
           if (paymentSuccessfull) {
             await axios
-              .post("http://localhost:3000/add-reservation/", { data: data })
+              .post("http://prayers-reservation-server-production.up.railway.app/add-reservation/", { data: data })
               .then((res) => {
                 alert("Submitted");
                 console.log(res.data);

@@ -31,7 +31,7 @@ const TableContent = () => {
   useEffect(() => {
     const getListData = () => {
       axios
-        .get("http://localhost:3000/reservation-list/")
+        .get("http://prayers-reservation-server-production.up.railway.app/reservation-list/")
         .then((res) => {
           setData(res.data);
         })
