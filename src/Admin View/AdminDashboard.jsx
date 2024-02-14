@@ -59,7 +59,7 @@ const InformationsLists = () => {
   useEffect(() => {
     const getCountDonations = () => {
       axios
-        .get("https://prayers-reservation-server-production.up.railway.app/dashboard-donations/")
+        .get("https://prayers-reservation-server-production.up.railway.app/admin/")
         .then((res) => {
           setCountDonations(res.data[0]);
           console.log(res.data[0]);
@@ -68,7 +68,7 @@ const InformationsLists = () => {
     };
     const getCountReservations = () => {
       axios
-        .get("https://prayers-reservation-server-production.up.railway.app/dashboard-reservations/")
+        .get("https://prayers-reservation-server-production.up.railway.app/admin/")
         .then((res) => {
           setcountReservations(res.data[0]);
           console.log(res.data[0]);

@@ -31,7 +31,7 @@ const TableContent = () => {
   useEffect(() => {
     const getListData = () => {
       axios
-        .get("https://prayers-reservation-server-production.up.railway.app/reservation-list/")
+        .get("https://prayers-reservation-server-production.up.railway.app/admin/scheduled-prayers/")
         .then((res) => {
           setData(res.data);
         })
@@ -118,7 +118,7 @@ const TableContentValues = ({ tableValue, componentRef }) => {
   };
   const handleDelete = async (id) => {
     await axios
-      .delete(`http://localhost:3000/delete-row/${id}/`)
+      .delete(`https://prayers-reservation-server-production.up.railway.app/admin/scheduled-prayers/${id}/`)
       .then((res) => {
         console.log(res.data);
         window.location.reload();
