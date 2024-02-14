@@ -6,7 +6,7 @@ import ScheduledPrayersPage from "./Admin View/ScheduledPrayersPage";
 import ScriptPage from "./Admin View/ListPage";
 function App() {
   return (
-    <BrowserRouter basename="https://prayers-reservation.netlify.app/">
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Pages />} />
         <Route path="/admin" element={<AdminDashboard />} />
