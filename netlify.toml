@@ -5,6 +5,6 @@
 
 [[redirects]]
   from = "/api/*"
-  to = "http://prayers-reservation-server-production.up.railway.app/:splat"
+  to = "http://prayers-reservation-server-production.up.railway.app/"
   status = 200
   force = true
