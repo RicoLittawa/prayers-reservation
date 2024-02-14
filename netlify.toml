@@ -4,7 +4,9 @@
   status = 200
 
 [[redirects]]
-  from = "/api/*"
-  to = "http://prayers-reservation-server-production.up.railway.app/"
+  from = "/add-reservation"
+  to = "http://prayers-reservation-server-production.up.railway.app/add-reservation"
   status = 200
   force = true
+  conditions = { Country = ["US", "CA"] }
+
