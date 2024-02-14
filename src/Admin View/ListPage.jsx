@@ -47,7 +47,7 @@ const ScriptPage = () => {
   useEffect(() => {
     const getData = () => {
       axios
-        .get(`http://prayers-reservation-server-production.up.railway.app/reservation-list/${currentDate}/${time}`)
+        .get(`https://prayers-reservation-server-production.up.railway.app/reservation-list/${currentDate}/${time}`)
         .then((res) => {
           setData(res.data);
         })
